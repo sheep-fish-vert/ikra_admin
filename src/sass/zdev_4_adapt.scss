@@ -1,6 +1,9 @@
 @media screen and (max-width: 1920px){
 
 }
+@media screen and (max-width: 1800px){
+    .panel-top-img{opacity: 0;visibility: hidden;z-index: -10;pointer-events:none;}
+}
 @media screen and (max-width: 1600px){
 
 }
