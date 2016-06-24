@@ -20,8 +20,12 @@ a{color: #405562;text-decoration: underline;
     &:hover{text-decoration: none;}
 }
 
-/* wraps styling*/
 
+
+/* wraps styling*/
+.main{margin-left: 250px;padding-left: 50px;transition:margin ease-out .4s;margin-top: 50px;padding-top: 45px;
+    &.hide-menu{margin-left: 56px;}
+}
 .mbox{max-width:1475px;width:100%;margin:0 auto;position:relative;z-index:1;}
 .mbox:after{content:"";clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;display:block;}
 
@@ -57,5 +61,6 @@ input, textarea{
 @include font-face('CoreSans', 'CoreSansNR-37CondLightItalic', 300, italic);
 @include font-face('CoreSans', 'CoreSansNR-47CondRegular');
 @include font-face('CoreSans', 'CoreSansNR-67CondBold', 700);
+@include font-face('CoreSans', 'Core Sans NR W01 57 Cn Medium', 500);
 
 /*/fonts*/
