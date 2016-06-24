@@ -2,6 +2,7 @@ function hideLeftMenu() {
     $('.left-menu .hide-menu').click(function() {
         $('.left-menu').stop().toggleClass('hide');
         $('.global-wrapper .main').stop().toggleClass('hide-menu');
+        $('.global-wrapper .header').stop().toggleClass('hide-menu');
     });
 }
 
