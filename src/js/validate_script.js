@@ -266,6 +266,8 @@ function someAjax(item, someUrl, successFunc, someData){
 $(document).ready(function(){
 
    validate('#call-popup .contact-form', {submitFunction:validationCall});
+   validate('.search-field form');
+   validate('.tiket-chat-form form');
    Maskedinput();
    fancyboxForm();
 
