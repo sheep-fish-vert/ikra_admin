@@ -5,13 +5,7 @@
 
         $('.style-it').each(function(){
 
-            var placeholder = {};
-
-            if($(this).attr('data-placeholder')){
-                placeholder.name = $(this).attr('data-placeholder');
-            }
-
-            $(this).styler(placeholder);
+            $(this).styler();
 
         });
 
