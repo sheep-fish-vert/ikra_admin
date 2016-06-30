@@ -104,3 +104,43 @@
 		}
 	}
 }
+
+.my-streams{
+	.mbox{
+		.heading{ width: 100%;  display: flex; padding: 0 0 30px 0;  
+			img{}
+			h3{color: #f97c39; font-size: 28px; font-family: 'CoreSans' ; font-weight: 300; margin: 0; vertical-align: middle; line-height: 1.1; padding: 0 0 0 10px; 
+			span{font-size: 16px; color: #d5dcde;
+
+				}
+			}		
+		}
+		.my-streams-table{width: 100%;
+			thead{
+				th{position: static;background-color: #5b7381;width: auto;color: #bdc7cd;padding: 20px 0;text-align: center;font-family: 'CoreSans'; font-size: 14px; font-weight: normal; cursor: pointer; font-weight: bold; background-repeat: no-repeat; background-position: 95% center; }				
+
+			}	
+			tbody{
+				tr{					
+					td{text-align: center; color: #5b7381; padding: 10px 0; width: 20%;	font-size: 16px;	
+						&:last-child{border-right: none;
+							a{border: 1px solid #ebebeb; padding: 5px 10px; color: #c3cbd1; text-decoration: none;
+							 &:first-child{margin-right: 10px;}
+							img{margin-right: 5px;
+								
+							}
+						}
+
+						}
+						&:first-child{
+							a{border: 1px solid #ebebeb; padding: 5px 15px; text-decoration: none;}
+							
+						}
+						&:nth-child(3),
+						&:nth-child(4){text-decoration: underline;}
+					}
+				}
+			}
+		}
+	}
+}
