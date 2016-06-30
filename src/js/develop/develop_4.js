@@ -6,15 +6,30 @@ function hideLeftMenu() {
     });
 }
 function arrowInLeftMenu(){
+
+
+
     if( $('.left-menu-link ul li').hasClass('active') ) {
         var arrow = '<span class="left-menu-mini-arrow"></span>';
         $('.left-menu').after(arrow);
         var activeLi = $('.left-menu-link ul li.active');
 
-        $('.left-menu-mini-arrow').css({
-            'top': activeLi.offset().top + activeLi.outerHeight()/2-8,// its a fucking magic
-            'left':$('.left-menu').width()
+        function showArrow(){
+            $('.left-menu-mini-arrow').css({
+                'top': activeLi.offset().top + activeLi.outerHeight()/2-8,// its a fucking magic
+                'left':$('.left-menu').width()
+            });
+        }
+        showArrow();
+
+        $('.left-menu-wrap').on('scroll', function() {
+            showArrow();
         });
+        $(window).on('resize', function() {
+
+            showArrow();
+        });
+
     }else if( $('.left-menu-mini-arrow') ){
         $('.left-menu-mini-arrow').remove();
     }
