@@ -159,13 +159,13 @@ function headeButer(menuMobile,toggleMenu){
 /* DOCUMENT READY  */
 $(document).ready(function() {
     //oneHeightItems();
-    $('.footer_placeholder').height($('.footer').outerHeight());
-
+    //$('.footer_placeholder').height($('.footer').outerHeight());
+    $('.left-menu-wrap').css('right', '-'+$.scrollbarWidth()+'px');
     //goTo();
     //animationBlock($('.setion-animate'));
 });
 
 $(window).resize(function() {
 
-    $('.footer_placeholder').height($('.footer').outerHeight());
+    //$('.footer_placeholder').height($('.footer').outerHeight());
 });
