@@ -92,6 +92,7 @@
         }
     }
 }
+.left-menu-mini-arrow{position: fixed;z-index: 1000;border-left: 9px solid #e8eaeb;border-top: 8px solid transparent;border-bottom: 8px solid transparent;left: 150px;transition:all ease-out .2s;}
 
 // header
 .header{position: fixed;top: 0;left: 0;width: 100%;background-color: #eaeced;z-index: 1000;
@@ -253,7 +254,7 @@
             }
         }
         .my-domens-button{
-            button{width: 161px;height: 49px;border:none;background-color: #ef7e2b;color: white;font-weight: 500;font-size: 18px;
+            button{width: 161px;height: 49px;border:none;color: white;font-weight: 500;font-size: 18px;
                 &:active{background-position: 50%  60%;}
         }
     }
@@ -273,7 +274,7 @@
 // tiket-talk
 .tiket-talk{
     .title{display: flex;justify-content: space-between;align-items: center;
-        .button-orange{max-width: 168px;}
+        .button-orange{max-width: 168px;padding: 0 22px;text-align: center;}
     }
 
     .tiket-chat{padding-top: 36px;padding-right: 168px;}
@@ -305,5 +306,32 @@
 
             }
         }
+    }
+}
+
+// ticket-create
+.ticket-create{
+    .ticket-create-form{margin-top: 35px;max-width: 510px;width: 100%;
+        .ticket-create-form-wrap{}
+        .form_row{padding: 25px 25px 25px 18px;display: flex;align-items: center;background-color: #eaeced;
+            &:not(:first-child){border-top: 1px solid #dde1e3;}
+            .ticket-create-text{display: flex;align-items: center;color: #5b7280;font-size: 18px;width: 125px;
+                span{margin-left: 5px;margin-right: 25px;}
+            }
+            .ticket-create-input{flex:1;width: 100%;
+                input,textarea{width: 100%;background-color: #fff;border:1px solid #dde1e3;height: 48px;padding: 5px 15px;
+                    &::-webkit-input-placeholder {color:#eaeced;}
+                    &:-moz-placeholder {color:#eaeced;opacity:1;}
+                    &::-moz-placeholder {color:#eaeced;opacity:1;}
+                    &:-ms-input-placeholder {color:#eaeced;}
+
+                    &.error{border-color: red;}
+                }
+                textarea{height: 140px;resize:none;padding: 15px;}
+            }
+        }
+    }
+    .ticket_submit{display: flex;justify-content: space-between;align-items: center;padding-top: 24px;
+        a,button{max-width: 100%;width: 47%;border:none;height: 71px;font-size: 18px;font-weight: 500;}
     }
 }
