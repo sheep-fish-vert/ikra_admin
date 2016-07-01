@@ -211,6 +211,28 @@ function fancyboxForm(){
 }
 
 
+/* offers */
+
+    function removeOffer(){
+
+        $(document).on('click', '.button-offers-minus', function(){
+
+            var offerId = $(this).attr('data-offer');
+
+            $(this).parents('tr').remove();
+
+            $.ajax({
+                url:ajaxUrl,
+                data:{action:'remove_offer', offer_id:offerId},
+                method:'POST'
+            });
+
+        });
+
+    }
+
+/* /offers */
+
 $(document).ready(function(){
 
    validate('#call-popup .contact-form', {submitFunction:validationCall});
@@ -221,5 +243,7 @@ $(document).ready(function(){
    validate('.my-domens-form form');
    Maskedinput();
    fancyboxForm();
+
+   removeOffer();
 
 });
