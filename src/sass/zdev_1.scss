@@ -8,7 +8,9 @@
 
         }
 
-        .offers-table-bottom{justify-content: flex-end;}
+        .offers-table-top{margin-bottom: 30px;}
+
+        .offers-table-bottom{justify-content: flex-end;padding-top: 30px;padding-bottom: 30px;}
 
         .search-line-title{font-size: 16px;color:#ced5d9;letter-spacing:0.6px;margin-right: 13px;width: 150px;}
 
@@ -39,8 +41,9 @@
         }
 
         .offers-table-main{
+
             .table-main{
-                .offers-table-targets{text-align: left;font-size: 16px;color:#304552;
+                .offers-table-targets{text-align: left;font-size: 16px;color:#304552;display: flex;flex-direction:column;align-items: center;justify-content: flex-start;
                     .offers-table-targets-title{font-weight: 500;}
                     .offers-table-targets-line{
                         .offers-table-targets-line-img{width: 15px;text-align: center;display: inline-block;}
@@ -63,9 +66,28 @@
                     }
                     .button-offers-minus{background-color: #5b7381;
                         &:before{width: 14px;height: 5px;left:calc(50% - 7px);top:calc(50% - 2.5px);}
+                        &:hover{background-color: #579ac1;}
+                    }
+                    .button-transparent{display: flex;justify-content: center;align-items:center;text-decoration: none;max-width: 118px;width: 100%;margin: 0 auto;height: 31px;border:1px solid #ededed;color:#5b7381;font-size: 13px;transition:all 300ms ease;
+                        .icon-wrap{position: relative;display: block;
+                            img{transition:all 300ms ease;
+                                &.hover-img{position: absolute;left:0;top:0;opacity: 0;}
+                            }
+                        }
+                        span{margin-left: 5px;color:rgba(91, 115, 129, .5);transition:all 300ms ease;}
+                        &:hover{border-color:#ef7e2b;background-color: #ef7e2b;
+                            span{color:#fff;
+                                &.icon-wrap{
+                                    img{opacity: 0;
+                                        &.hover-img{opacity: 1;}
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
+
         }
 
     }
