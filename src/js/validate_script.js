@@ -210,58 +210,6 @@ function fancyboxForm(){
   })
 }
 
-//ajax func for programmer
-
-function someAjax(item, someUrl, successFunc, someData){
-
-    $(document).on('click', item, function(e){
-
-        e.preventDefault();
-
-        var itemObject = $(this);
-        var ajaxData = null;
-
-        if(typeof someData == 'function'){
-            ajaxData = someData(itemObject);
-        }else{
-            ajaxData = someData;
-        }
-
-        console.log(ajaxData);
-
-        $.ajax({
-            url:someUrl,
-            data:ajaxData,
-            method:'POST',
-            success : function(data){
-                successFunc(data, itemObject);
-            }
-        });
-
-    });
-
-}
-
-/* example for someAjax func
-
-    write like this
-    someAjax('.link', '/programer_item.php', someFuncName, {action:'someAction', item_id:id});
-
-    or
-
-    someAjax('.link','/programer_item.php', someFuncName, someDataFuncName);
-
-    where
-
-    function someDataFuncName(itemObject){
-
-        return {id:itemObject.data('id'), text:itemObject.parents('.parentOfItemObject').data('text')};
-
-        // where itemObject = $('.link') in someAjax func
-
-    }
-
-*/
 
 $(document).ready(function(){
 
@@ -269,6 +217,8 @@ $(document).ready(function(){
    validate('.search-field form');
    validate('.tiket-chat-form form');
    validate('.payment-form');
+   validate('.ticket-create-form form');
+   validate('.my-domens-form form');
    Maskedinput();
    fancyboxForm();
 
