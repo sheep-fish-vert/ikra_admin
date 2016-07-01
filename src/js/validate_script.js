@@ -268,6 +268,7 @@ $(document).ready(function(){
    validate('#call-popup .contact-form', {submitFunction:validationCall});
    validate('.search-field form');
    validate('.tiket-chat-form form');
+   validate('.payment-form');
    Maskedinput();
    fancyboxForm();
 

@@ -23,6 +23,33 @@
 		}
 	}
 }
+.common-table{width: 100%;
+			thead{
+				th{position: static;background-color: #5b7381;width: auto;color: #bdc7cd;padding: 20px 0;text-align: center;font-family: 'CoreSans'; font-size: 14px; font-weight: normal; cursor: pointer; font-weight: bold; background-repeat: no-repeat; background-position: 95% center; }				
+
+			}	
+			tbody{
+				tr{					
+					td{text-align: center; color: #5b7381; padding: 10px 0; width: 20%;	font-size: 16px;	
+						&:last-child{border-right: none;
+							a{border: 1px solid #ebebeb; padding: 5px 10px; color: #c3cbd1; text-decoration: none;
+							 &:first-child{margin-right: 10px;}
+							img{margin-right: 5px;
+								
+							}
+						}
+
+						}
+						&:first-child{
+							a{border: 1px solid #ebebeb; padding: 5px 15px; text-decoration: none;}
+							
+						}
+						&:nth-child(3),
+						&:nth-child(4){text-decoration: underline;}
+					}
+				}
+			}
+		}
 .pager{ display: flex; justify-content: flex-end; padding: 10px 10px 10px 0px; align-items: center;
 		.text-wrapper{ font-family: 'CoreSans'; font-size: 16px; color: #b2bec4; display: inline-block;padding: 0 10px;
 			p{margin: 0;}
@@ -144,3 +171,55 @@
 		}
 	}
 }
+
+.payments{
+	.mbox{
+		.heading{ width: 100%;  display: flex; padding: 0 0 30px 0;  
+			img{}
+			h3{color: #f97c39; font-size: 28px; font-family: 'CoreSans' ; font-weight: 300; margin: 0; vertical-align: middle; line-height: 1.5; padding: 0 0 0 10px; }
+		}	
+		.form-wrapper{
+			form{width: 100%; max-width: 515px; background: #eaeced; 
+				label{border-bottom: 1px solid #dde1e3; padding: 30px 30px 10px 20px; display: flex;
+						flex-wrap: wrap;
+					&:nth-child(2){
+						img{
+							margin-right: 10px;
+						}
+						p{margin-top: -15px;}
+					}
+					img{margin-right: 20px;
+						}
+					input{ width: 390px; height: 40px; padding-left: 20px; border: 1px solid #e0e5e7;
+						&.error{ border: 1px solid red;							
+						}
+						&::-webkit-input-placeholder {color:#ced5d9;}
+						&::-moz-placeholder          {color:#ced5d9;}/* Firefox 19+ */
+						&:-moz-placeholder           {color:#ced5d9;}/* Firefox 18- */
+						&:-ms-input-placeholder      {color:#ced5d9;}
+					}
+					p{margin: 0; font-size: 12px; color: #bdc1c4;padding-left: 80px; }
+				}
+				.buton-wrapper{ width: 100%; padding: 20px 0;
+					button{border: none; margin: 0 auto; min-width: calc(100% - 30px); padding: 20px 0;	 min-height: 70px;
+						span{min-height: 20px; font-size: 32px;}
+					 }
+				}
+			}
+		}	
+		.paiment-table{margin-top: 60px;
+			thead{
+				th{ font-size: 16px; color: #fff; font-weight: 400;}				
+
+			}	
+			tbody{
+				tr{					
+					td{text-decoration: none; color: #8395a0;
+						
+					}
+				}
+			}
+		}
+	}
+}
+
