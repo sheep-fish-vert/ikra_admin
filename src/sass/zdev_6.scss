@@ -50,6 +50,11 @@
 				}
 			}
 		}
+.section-heading{ width: 100%;  display: flex; padding: 0 0 30px 0;  
+			img{}
+			h3{color: #f97c39; font-size: 28px; font-family: 'CoreSans' ; font-weight: 300; margin: 0; vertical-align: middle; line-height: 1.1; padding: 0 0 0 10px; 
+			}		
+}		
 .pager{ display: flex; justify-content: flex-end; padding: 10px 10px 10px 0px; align-items: center;
 		.text-wrapper{ font-family: 'CoreSans'; font-size: 16px; color: #b2bec4; display: inline-block;padding: 0 10px;
 			p{margin: 0;}
@@ -63,9 +68,10 @@
 	.mbox{display: flex; flex-wrap: wrap; justify-content: flex-end; 
 		.search-field{ padding: 15px 10px 0 0;
 		}
-		.heading{flex: 1; display: flex; padding: 0 0 10px 0;
+		 .waiting-heading{flex: 1; display: flex; padding: 0 0 10px 0;
 			img{}
-			h3{color: #f97c39; font-size: 28px; font-family: 'CoreSans' ; font-weight: 300; margin: 0; vertical-align: middle; line-height: 1.5; padding: 0 0 0 10px; }
+			h3{
+				color: #f97c39; font-size: 28px; font-family: 'CoreSans' ; font-weight: 300; margin: 0; vertical-align: middle; line-height: 1.5; padding: 0 0 0 10px; }
 		}
 		.pagination{ flex: 1;
 			
@@ -134,12 +140,10 @@
 
 .my-streams{
 	.mbox{
-		.heading{ width: 100%;  display: flex; padding: 0 0 30px 0;  
-			img{}
-			h3{color: #f97c39; font-size: 28px; font-family: 'CoreSans' ; font-weight: 300; margin: 0; vertical-align: middle; line-height: 1.1; padding: 0 0 0 10px; 
+		.my-streams-heading{ 
 			span{font-size: 16px; color: #d5dcde;
 
-				}
+				
 			}		
 		}
 		.my-streams-table{width: 100%;
@@ -173,11 +177,7 @@
 }
 
 .payments{
-	.mbox{
-		.heading{ width: 100%;  display: flex; padding: 0 0 30px 0;  
-			img{}
-			h3{color: #f97c39; font-size: 28px; font-family: 'CoreSans' ; font-weight: 300; margin: 0; vertical-align: middle; line-height: 1.5; padding: 0 0 0 10px; }
-		}	
+	.mbox{		
 		.form-wrapper{
 			form{width: 100%; max-width: 515px; background: #eaeced; 
 				label{border-bottom: 1px solid #dde1e3; padding: 30px 30px 10px 20px; display: flex;
@@ -223,3 +223,12 @@
 	}
 }
 
+.tikets{
+	.mbox{
+		.open-tiket,.clothe-tiket{display: inline-block; background:#eaeced; width: 300px; text-align: center;padding: 17px 0;			
+		}
+		.button-orange{width: 180px; height: 50px; font-size: 18px; display: inline-block; margin: 0 0 0 auto;
+			span{vertical-align: middle; line-height: 50px;}
+		}
+	}
+}
