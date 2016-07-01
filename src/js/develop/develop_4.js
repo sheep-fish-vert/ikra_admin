@@ -19,16 +19,21 @@ function arrowInLeftMenu(){
                 'top': activeLi.offset().top + activeLi.outerHeight()/2-8,// its a fucking magic
                 'left':$('.left-menu').width()
             });
+
+            console.log('activeLi.offset().top ' , activeLi.offset().top);
         }
         showArrow();
 
         $('.left-menu-wrap').on('scroll', function() {
-            showArrow();
-        });
-        $(window).on('resize', function() {
+            setTimeout(function(){
+                showArrow();
+            },50);
 
-            showArrow();
         });
+        // $(document).on('scroll', function() {
+
+        //      showArrow();
+        // });
 
     }else if( $('.left-menu-mini-arrow') ){
         $('.left-menu-mini-arrow').remove();
