@@ -215,15 +215,20 @@ function fancyboxForm(){
 
     function removeOffer(){
 
-        $(document).on('click', '.button-offers-minus', function(){
+        $(document).on('click', '.remove-offer', function(){
 
-            var offerId = $(this).attr('data-offer');
+            var offerId = $(this).attr('data-offer-id');
+            var actionText = "remove_my_offer";
+
+            if($(this).is('.button-offers-minus')){
+                actionText = "remove_offer";
+            }
 
             $(this).parents('tr').remove();
 
             $.ajax({
                 url:ajaxUrl,
-                data:{action:'remove_offer', offer_id:offerId},
+                data:{action:actionText, offer_id:offerId},
                 method:'POST'
             });
 

@@ -90,6 +90,26 @@
 
         }
 
+        /* my-offers */
+
+            &.my-offers{
+                .offers-table-main{
+                    .table-main{
+                        .offers-table-targets{justify-content: center;
+                            .offers-table-targets-wrap{margin-bottom: 10px;
+                                &:last-child{margin-bottom: 0;}
+                                .offers-table-targets-title{margin-bottom: 5px;text-align: center;}
+                            }
+                            .offers-table-tartgets-line-wrap{display: flex;
+                                .offers-table-targets-line{margin: 0 5px;}
+                            }
+                        }
+                    }
+                }
+            }
+
+        /* /my-offers */
+
     }
 
 /* /offers-table */
