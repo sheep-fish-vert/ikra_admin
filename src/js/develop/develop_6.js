@@ -27,9 +27,18 @@ function sorter(){
 		.tablesorter(); 
 }
 
+function tabsForTable(){
+	$(".open-tiket, .clothe-tiket").on('click',function(){
+		console.log('hi');
+		$('.open-tiket, .clothe-tiket').removeClass('active');
+		$(this).addClass('active');
+	})
+}
+
 $(document).ready(function(){
 	sorter();
 	pager();
+	tabsForTable();
 
 });
 

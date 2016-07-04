@@ -224,11 +224,32 @@
 }
 
 .tikets{
-	.mbox{
-		.open-tiket,.clothe-tiket{display: inline-block; background:#eaeced; width: 300px; text-align: center;padding: 17px 0;			
+	.mbox{position: relative;
+		.open-tiket,.clothe-tiket{display: inline-block; background:#eaeced; width: 300px; text-align: center;padding: 17px 0;	cursor: pointer; 
+			&.active{ background-color: #d2d9dc; position: relative;
+				&:after{ display: block; content: ''; position: absolute; top: 50px; left: 50%; margin-left: - 10px;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-top: 10px solid #d2d9dc;
+				border-bottom: 10px solid transparent;}
+				
+
+			}		
 		}
-		.button-orange{width: 180px; height: 50px; font-size: 18px; display: inline-block; 
+		 .open-tiket.active~.open-tiket-table{display:table;  }
+		 .clothe-tiket.active~.clothe-tiket-table{display:table;  }
+
+		.button-orange{width: 180px; height: 50px; font-size: 18px; display: inline-block; text-align: center; position: absolute; right: 10px; top: 80px;
 			span{vertical-align: middle; line-height: 50px;}
+		}
+		.tikets-table{ display: none;
+			thead{
+				tr{
+					th{color: #fff; font-weight: 300;  cursor: default;
+						
+					}
+				}
+			}
 		}
 	}
 }
