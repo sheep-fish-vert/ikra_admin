@@ -153,10 +153,9 @@
 			}	
 			tbody{
 				tr{					
-					td{text-align: center; color: #5b7381; padding: 10px 0; width: 20%;	font-size: 16px;	
-						&:last-child{border-right: none;
-							a{border: 1px solid #ebebeb; padding: 5px 10px; color: #c3cbd1; text-decoration: none;
-							 &:first-child{margin-right: 10px;}
+					td{text-align: center; color: #5b7381; padding: 10px 5px; width: 20%;	font-size: 16px;	
+						&:last-child{border-right: none; 
+							a{border: 1px solid #ebebeb; padding: 5px 10px; color: #c3cbd1; text-decoration: none; display: inline-block;margin: 5px 0;
 							img{margin-right: 5px;
 								
 							}
@@ -284,6 +283,9 @@
 			 	
 			 			}
 					}
+					label{
+						input.error{border: 1px solid red;}
+					}
 				}
 				.right-side{
 					
@@ -364,17 +366,61 @@
 		.form-wrapper{
 			.profile-form{
 				.left-side, .right-side{
-					label{
-						&:nth-of-type(1){margin-bottom: 30px;
-							
+					label{flex-direction: row; padding-left: 15px; align-items: center;
+						&:nth-of-type(1){margin-bottom: 30px;							
 						}
+						.input-wrapper{min-width: 340px; margin: 0 20px 0 auto;}
+						input{ 
+							&.error{border: 1px solid red;								
+							}
+						}
+						.span-wrapper{}
+						span{ margin: 0px 0px 0px 0px; vertical-align: middle; color: #5b7280;font-size: 18px; vertical-align: middle; 
+							span{color: #b0c1c8; font-size: 12px;}
+						}
+						.image-wrapper{margin-right: 10px}
+						img{max-height: 30px; margin-right: 5px;}	
+
 					}
 				}
 
 				.right-side{padding-top: 80px;
-					
+					label{
+						&:nth-of-type(1){ padding: 0;
+							.refwrapper-left, .refwrapper-right{ width: 50%;
+								padding: 25px 0 25px 0px;
+							}		
+
+							.refwrapper-right{background:#d2d9dc; text-align: center;
+								span{line-height:1; font-size: 36px; }
+							}	
+
+							.refwrapper-left{padding: 30px 0 20px 25px; display: flex;
+							}				
+						}
+						&:nth-of-type(2),&:nth-of-type(3){
+							span{line-height: 1;}
+						}
+						&:nth-of-type(5){
+							.span-wrapper:last-child{
+								span{color: #cf6f55; font-size: 14px; margin-left: 20px; margin-top: 4px;}
+								
+							}
+						} 
+							
+					}
 				}
-				
+				.left-side{
+					label{
+						&:nth-of-type(7){margin-top: 30px;							
+						}
+						&:nth-of-type(4){ flex-wrap: wrap; padding-bottom: 0;
+							.span-email-wrapper{ text-align: center;width: 100%;padding: 5px 0;
+								span{color: #b0c1c8; font-size: 12px; width: 100%; }
+							}						
+						}
+					}
+				}				
 			}
 		}
 	}

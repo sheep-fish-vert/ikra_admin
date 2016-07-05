@@ -193,7 +193,7 @@ function popNext(popupId, popupWrap){
 /*маска на инпуте*/
 function Maskedinput(){
     if($('.tel-mask')){
-        $('.tel-mask').mask('+9 (999) 999-99-99 ');
+        $('.tel-mask').mask('+99 (999) 99-99-99 ');
     }
 }
 
@@ -246,9 +246,13 @@ $(document).ready(function(){
    validate('.payment-form');
    validate('.ticket-create-form form');
    validate('.my-domens-form form');
+   validate('.profile-form');
+   validate('.rotator-form');
    Maskedinput();
    fancyboxForm();
 
    removeOffer();
+
+   Maskedinput();
 
 });
