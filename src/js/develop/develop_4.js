@@ -20,7 +20,7 @@ function arrowInLeftMenu(){
                 'left':$('.left-menu').width()
             });
 
-            console.log('activeLi.offset().top ' , activeLi.offset().top);
+            // console.log('activeLi.offset().top ' , activeLi.offset().top);
         }
         showArrow();
 
