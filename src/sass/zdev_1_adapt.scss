@@ -47,6 +47,74 @@
 }
 @media screen and (max-width: 992px){
 
+    /* offers-table */
+
+        .offers-table{
+
+            .offers-table-top, .offers-table-bottom{flex-wrap:wrap;
+                .offers-table-right{width:100%;}
+            }
+
+            .offers-table-top{margin-bottom:1px;
+                .offers-table-left{margin-bottom:10px;}
+            }
+
+            .offers-table-bottom{display: none;}
+
+            .search-line{
+                .search-line-title{display: none;}
+                .search-line-wrap{width:calc((100% - 256px) / 3);margin-right:1px;
+                    &:last-child{width:256px;}
+                }
+                .search-line-input{
+                    input{height:66px;line-height:66px;font-size:20px;}
+                }
+                .search-line-submit{
+                    button{height:66px;width:66px;background-image:url(../images/loop-bigger.png);background-position:center center;background-repeat:no-repeat;
+                        img{display: none;}
+                    }
+                }
+
+                .jq-selectbox{
+                    .jq-selectbox__select{height:66px;background-color:#d0dadd;padding:0 10px 0 10px;display: flex;align-items: center;}
+                    .jq-selectbox__trigger{display: none;}
+                    .jq-selectbox__select-text{color:#fff;text-shadow:none;width:100%!important;text-align:center;}
+                }
+
+            }
+
+            .offers-table-main{
+                .table-main{
+                    .offers-buttons{
+                        .offers-buttons-wrap{display: flex;justify-content: flex-end;margin-bottom:0;}
+                        .button-offers-plus, .button-offers-minus{width:75px;height:83px;}
+                        .button-transparent{width: 75px;height:83px;margin:0;
+                            .icon-wrap{display: none;}
+                            span{margin-left:0;font-size:16px;}
+                        }
+                    }
+                }
+            }
+
+        }
+
+    /* /offers-table */
+
+    /* table-main */
+
+        .table-main{
+            table{
+                tr{
+                    td, th{
+                        &:first-child{display: none;}
+                    }
+                }
+                td{padding:0;}
+            }
+        }
+
+    /* /table-main */
+
     /* statistic */
 
         .statistic{
