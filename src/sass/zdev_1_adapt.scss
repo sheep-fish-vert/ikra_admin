@@ -4,6 +4,17 @@
 @media screen and (max-width: 1600px){
 
 }
+@media screen and (max-width: 1410px){
+
+    /* statistic */
+
+        .statistic{
+            .statistic-table-main{overflow-x:scroll;}
+        }
+
+    /* /statistic */
+
+}
 @media screen and (max-width: 1366px){
 
 }
@@ -12,21 +23,23 @@
     /* statistic */
 
         .statistic{
-            
+
+            .statistic-tab-nav{flex-wrap:wrap;justify-content: space-around;
+                label{width:calc(100% / 6);}
+            }
+
+            .statistic-filter{
+                .statistic-filter-top{flex-wrap:wrap;
+                    .statistic-filter-radio-buttons{width:100%;text-align:center;margin-bottom:5px;}
+                }
+            }
+
         }
 
     /* /statistic */
 
 }
 @media screen and (max-width: 1100px){
-
-    /* statistic */
-
-        .statistic{
-            .statistic-main{overflow-x:scroll;}
-        }
-
-    /* /statistic */
 
 }
 @media screen and (max-width: 1024px){
@@ -38,7 +51,15 @@
 
         .statistic{
 
-            .statistic-main{overflow:visible;}
+            .statistic-table-main{overflow:visible;}
+
+            .statistic-filter{
+                .statistic-filter-bottom{flex-wrap:wrap;justify-content: space-around;
+                    .statistic-input-wrap{padding:0 5px;margin-bottom:10px;
+                        &:first-child, &:last-child{padding-left:5px;padding-right:5px;}
+                    }
+                }
+            }
 
             .mobile-statistic-search{display:block;}
             .statistic-big-search{display:none;}
