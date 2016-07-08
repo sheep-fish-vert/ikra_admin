@@ -201,6 +201,37 @@
             }
         }
     }
+
+    // news
+    .news{padding-right: 0;
+        .mbox{padding: 0;}
+        .news-rows{padding-top: 20px;}
+        .news-rows .row .row-top{padding-top: 10px;}
+        .news-rows .row .row-top .right{padding-left: 15px;}
+        .news-rows .row .row-top{background-color: transparent;}
+        .news-rows .row .row-bottom{background:transparent;}
+        .news-rows .row .row-top .right{color: #f8681b;}
+        .news-rows .row .row-top .row-top{height: 42px;}
+        .news-rows .row .row-bottom{padding: 12px;line-height: 1.5;}
+        .news-rows .row{margin-bottom: 0;}
+        .news_bottom{display: none;}
+        .news-rows .row{border-bottom: 1px solid #d2d9dc;}
+    }
+
+    // ticket-create
+    .ticket-create{
+        .title{padding-left: 10px;}
+        .ticket-create-form{max-width: 100%;margin-top: 12px;
+            .form_row{background-color: transparent;border-top: none !important;padding: 25px 9px 25px 18px;margin-bottom: 15px;
+                .ticket-create-text{width: 114px;
+                    span{margin-right: 15px;}
+                }
+            }
+        }
+        .ticket_submit{margin:0 -10px;padding-top: 77px;
+            a,button{width: 50%;}
+        }
+    }
 }
 @media screen and (max-width: 767px){
 
