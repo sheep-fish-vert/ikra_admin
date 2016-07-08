@@ -6,6 +6,13 @@ function hideLeftMenu() {
             $('.global-wrapper .header').stop().toggleClass('hide-menu');
         }
     });
+
+    $('.title > span.button-menu, .left-menu .left-menu-link li.hide-menu').click(function(event) {
+        if( $(window).width()<992) {
+            $('.left-menu').stop().toggleClass('mobile-show');
+            $('.header').stop().toggleClass('mobile-show');
+        }
+    });
 }
 function arrowInLeftMenu(){
     if( $('.left-menu-link ul li').hasClass('active') && $(window).width()>992) {

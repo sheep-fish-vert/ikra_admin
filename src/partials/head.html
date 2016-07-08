@@ -4,13 +4,6 @@
     <meta charset="UTF-8">
     <title></title>
 
-    <meta id="viewport" name="viewport" content="width=1280,user-scalable=yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="MobileOptimized" content="1280"/>
-    <meta name="HandheldFriendly" content="false"/>
-
-    <meta name="format-detection" content="telephone=no">
-
     <!-- build:css -->
 
     <link rel="stylesheet" href="css/fancybox.css">
@@ -40,5 +33,13 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script>
+        if(screen.width>640){
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />')
+        }
+        else{
+            document.write('<meta name="viewport" content="width=640, user-scalable=false "/>')
+        }
+    </script>
 </head>
 <body>
