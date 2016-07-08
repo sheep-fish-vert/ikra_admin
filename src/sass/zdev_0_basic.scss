@@ -30,6 +30,12 @@ a{color: #405562;text-decoration: underline;
 .mbox{max-width:1470px;padding-right:10px;width:100%;position:relative;z-index:1;}
 .mbox:after{content:"";clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;display:block;}
 
+@media screen and (max-width: 992px){
+
+    .mbox{padding-left:10px;}
+
+}
+
 /* /wraps styling*/
 
 input, textarea{
