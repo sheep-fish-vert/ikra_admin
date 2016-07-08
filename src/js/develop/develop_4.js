@@ -1,15 +1,14 @@
 function hideLeftMenu() {
     $('.left-menu .hide-menu').click(function() {
-        $('.left-menu').stop().toggleClass('hide');
-        $('.global-wrapper .main').stop().toggleClass('hide-menu');
-        $('.global-wrapper .header').stop().toggleClass('hide-menu');
+        if( $(window).width()>992) {
+            $('.left-menu').stop().toggleClass('hide');
+            $('.global-wrapper .main').stop().toggleClass('hide-menu');
+            $('.global-wrapper .header').stop().toggleClass('hide-menu');
+        }
     });
 }
 function arrowInLeftMenu(){
-
-
-
-    if( $('.left-menu-link ul li').hasClass('active') ) {
+    if( $('.left-menu-link ul li').hasClass('active') && $(window).width()>992) {
         var arrow = '<span class="left-menu-mini-arrow"></span>';
         $('.left-menu').after(arrow);
         var activeLi = $('.left-menu-link ul li.active');

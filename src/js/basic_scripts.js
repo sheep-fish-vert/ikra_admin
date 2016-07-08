@@ -160,7 +160,9 @@ function headeButer(menuMobile,toggleMenu){
 $(document).ready(function() {
     //oneHeightItems();
     //$('.footer_placeholder').height($('.footer').outerHeight());
-    $('.left-menu-wrap').css('right', '-'+$.scrollbarWidth()+'px');
+    if( $(window).width() > 992 ){
+        $('.left-menu-wrap').css('right', '-'+$.scrollbarWidth()+'px');
+    }
     //goTo();
     //animationBlock($('.setion-animate'));
 });

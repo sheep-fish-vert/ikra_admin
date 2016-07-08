@@ -39,7 +39,109 @@
 
 }
 @media screen and (max-width: 992px){
+    // header
+    .header{
+        .header-wrap{margin-left: 0px;}
+        .header-items{width: 100%;
+            .item{width: 50%;border-right: none;
+                &.item-1{display: none;}
+            }
+        }
+        .header-logout{display: none;}
+    }
 
+    // left-menu
+    .left-menu{width: 100%;position: fixed;top: 0;left: 0;bottom: auto;background-color: #304552;z-index: 1001;overflow: hidden;height: calc(100vh - 50px);
+        .left-menu-wrap{position: absolute;top: 0;bottom: 0;left: 0;right: 0;overflow-y: hidden;overflow-x: hidden;display: flex;}
+        &:after{display: none;}
+        .left-menu-logo{display: none;}
+        .left-menu-link{display: flex;
+            ul{display: flex;flex-wrap: wrap;}
+            li{width: 33.33%;display: flex;border-bottom: 1px solid #2c3f4b;border-right: 1px solid #2c3f4b;
+                &:nth-child(3n){border-right: none;}
+
+                &:hover,&.active{
+                    .item-icon{
+                        &:after{left: 0;}
+                        .icon-img{
+                            &.icon-1{background-image: url(../images/left-menu-img-1-active.png);}
+                            &.icon-2{background-image: url(../images/left-menu-img-2-active.png);}
+                            &.icon-3{background-image: url(../images/left-menu-img-3-active.png);}
+                            &.icon-4{background-image: url(../images/left-menu-img-4-active.png);}
+                            &.icon-5{background-image: url(../images/left-menu-img-5-active.png);}
+                            &.icon-6{background-image: url(../images/left-menu-img-6-active.png);}
+                            &.icon-7{background-image: url(../images/left-menu-img-7-active.png);}
+                            &.icon-8{background-image: url(../images/left-menu-img-8-active.png);}
+                            &.icon-9{background-image: url(../images/left-menu-img-9-active.png);}
+                            &.icon-10{background-image: url(../images/left-menu-img-10-active.png);}
+                            &.icon-11{background-image: url(../images/left-menu-img-11-active.png);}
+                            &.icon-12{background-image: url(../images/left-menu-img-12-active.png);}
+                            &.icon-13{background-image: url(../images/left-menu-img-13-active.png);}
+                        }
+                    }
+                    .item-text{text-shadow: 0px 0px 1px #314653;}
+                }
+                &.active{
+                    .item-text{
+                        &:after{display: none;}
+                    }
+                }
+                &.mobile-show{display: flex;
+                    .item-icon{
+                        .icon-img{
+                            &.icon-14{background-image: url(../images/header-logout.png);}
+                        }
+                    }
+                }
+                a{display: flex;flex-direction: column;height: auto;width: 100%;justify-content: center;}
+
+                .item-icon{width: 100%;background-color: transparent;height: 70px;border-bottom: none;margin-bottom: 18px;
+                    &:after{display: none;}
+                    .icon-img{background-size: contain;
+                        &.icon-1{background-image: url(../images/left-menu-img-1-active.png);}
+                        &.icon-2{background-image: url(../images/left-menu-img-2-active.png);}
+                        &.icon-3{background-image: url(../images/left-menu-img-3-active.png);}
+                        &.icon-4{background-image: url(../images/left-menu-img-4-active.png);}
+                        &.icon-5{background-image: url(../images/left-menu-img-5-active.png);}
+                        &.icon-6{background-image: url(../images/left-menu-img-6-active.png);}
+                        &.icon-7{background-image: url(../images/left-menu-img-7-active.png);}
+                        &.icon-8{background-image: url(../images/left-menu-img-8-active.png);}
+                        &.icon-9{background-image: url(../images/left-menu-img-9-active.png);}
+                        &.icon-10{background-image: url(../images/left-menu-img-10-active.png);}
+                        &.icon-11{background-image: url(../images/left-menu-img-11-active.png);}
+                        &.icon-12{background-image: url(../images/left-menu-img-12-active.png);}
+                        &.icon-13{background-image: url(../images/left-menu-img-13-active.png);}
+                    }
+                }
+                .item-text{border-bottom: none;width: 100%;height: auto;color: #98a2a9;font-size: 18px;justify-content: center;
+                    span{padding: 0;left: auto;}
+                }
+                .item-icon-arrow{width: 100px;height: 70px;position: relative;margin-bottom: 20px;
+                    span{width: 35px;height: 35px;border-left: 2px solid #8f9aa1;border-top: 2px solid #8f9aa1;position: absolute;top: 50%;transform: translateY(-82%) skew(0deg, 0deg) rotate(-45deg);left: 16px;transform-origin: 100% 50%;background-color: transparent;transition:all ease .2s;}
+                    span:nth-child(2){left: 28px;}
+                    span:nth-child(3){left: 40px;}
+                }
+
+                .item-text-hide{color: #314552;opacity: 1;height: auto;display: flex;align-items: center;width: 100%;color: #98a2a9;justify-content: center;
+                    span{padding-left: 0px;left: auto;}
+                }
+            }
+        }
+        &.hide{width: 56px;
+            .left-menu-link{
+                li{
+                    .item-text,.item-text-hide{width: 0;visibility: hidden;
+                        span{left: -200%;overflow: hidden;}
+                    }
+                }
+                .item-icon-arrow{width: 56px;height: 100%;position: relative;
+                    span{border-left: none;border-top: none;position: absolute;top: 50%;transform: translateY(-82%) skew(-4deg, 4deg) rotate(-49deg);left: 11px;border-right: 1px solid rgba(0, 0, 0, 0.22);border-bottom: 1px solid rgba(0, 0, 0, 0.22);}
+                    span:nth-child(2){left: 16px;}
+                    span:nth-child(3){left: 21px;}
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 767px){
 

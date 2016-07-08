@@ -1,5 +1,5 @@
 // left-menu
-.left-menu{width: 250px;position: fixed;top: 0;left: 0;bottom: 0;background-color: #e8eaeb;z-index: 1001;transition:width ease-out .4s;overflow: hidden;overflow: hidden;
+.left-menu{width: 250px;position: fixed;top: 0;left: 0;bottom: 0;background-color: #e8eaeb;z-index: 1001;transition:width ease-out .4s;overflow: hidden;
     .left-menu-wrap{position: absolute;top: 0;bottom: 0;left: 0;right: -17px;overflow-y: scroll;overflow-x: hidden;}
 
     &:after{position: absolute;content: '';left: 0;top: 0;height: 100%;background-color: #304552;width: 56px;z-index: 1;}
@@ -42,6 +42,7 @@
                     &:after{content: '';border-left: 9px solid #e8eaeb;border-top: 8px solid transparent;border-bottom: 8px solid transparent;position: absolute;left: 100%;top: 50%;transform: translateY(-50%);z-index: 1;}
                 }
             }
+            &.mobile-show{display: none;}
             a{display: flex;height: 56px;align-items: center;text-decoration: none;font-size: 18px;color: #314653;font-weight: 400;}
 
             .item-icon{width: 56px;display: flex;align-items: center;justify-content: center;background-color: #304552;height: 100%;border-bottom: 1px solid #2e424f;position: relative;z-index: 3;
