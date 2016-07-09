@@ -71,7 +71,7 @@
     /* profile */
 
         .profile{
-            
+
             .common-form{
                 .left-side, .right-side{width:100%;}
                 .left-side, .right-side{
@@ -128,7 +128,32 @@
     /* /offer-page */
 
     /* my-streams */
-
+    .my-streams {
+        .mbox{
+            .my-streams-table-wrap{margin:0 -10px;}
+            .title{margin-bottom: 55px;padding-left: 5px;
+                h1 > span span{position: absolute;top: calc(100% + 13px);left: 20px;padding-right: 15px;max-height: 40px;overflow: hidden;}
+            }
+            .my-streams-table {
+                thead{
+                    th{font-size: 16px;color: white;}
+                }
+                tbody{
+                    tr{
+                        td{
+                            .mobile-show{font-size: 16px;color: #5b7381;margin-bottom: 5px;padding-left: 10px;text-align: left;}
+                            &:last-child{padding: 0;width: 12%;vertical-align: top;
+                                a{margin: 0;border:none;height: 68px;display: flex;width: 100%;justify-content: center;align-items: center;color: white;background-color: #5b7381;
+                                    &:first-child{background-color: #dc691d;}
+                                    img{display: none;}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
     /* /my-streams */
