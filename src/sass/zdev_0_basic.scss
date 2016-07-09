@@ -20,7 +20,14 @@ a{color: #405562;text-decoration: underline;
     &:hover{text-decoration: none;}
 }
 
+.mobile-show{display: none!important;}
 
+@media screen and (max-width:992px){
+
+    .mobile-show{display:block!important;}
+    .mobile-desktop{display:none!important;}
+
+}
 
 /* wraps styling*/
 .main{margin-left: 250px;padding-left: 50px;transition:margin ease-out .4s;margin-top: 50px;padding-top: 45px;
