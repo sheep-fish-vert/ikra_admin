@@ -23,8 +23,7 @@ function pager(){
 }
 
 function sorter(){
-	$("#tableToSort")
-		.tablesorter();
+	$("#tableToSort").tablesorter();
 }
 
 function tabsForTable(){
@@ -42,25 +41,27 @@ function tabsForTable(){
 
 function copyToBufer(){
 	var copyEmailBtn = document.querySelector('.copy-link');
-	copyEmailBtn.addEventListener('click', function(event) {
-	  var emailLink = document.querySelector('.referal-link-text');
-	  var range = document.createRange();
-	  range.selectNode(emailLink);
-	  window.getSelection().addRange(range);
-	  try {
-	    var successful = document.execCommand('copy');
-	    var msg = successful ? 'successful' : 'unsuccessful';
-	  } catch(err) {}
-	  window.getSelection().removeAllRanges();
-	});
+	if (copyEmailBtn){
+		copyEmailBtn.addEventListener('click', function(event) {
+		  var emailLink = document.querySelector('.referal-link-text');
+		  var range = document.createRange();
+		  range.selectNode(emailLink);
+		  window.getSelection().addRange(range);
+		  try {
+		    var successful = document.execCommand('copy');
+		    var msg = successful ? 'successful' : 'unsuccessful';
+		  } catch(err) {}
+		  window.getSelection().removeAllRanges();
+		});
+	}
 }
 
 $(document).ready(function(){
-	copyToBufer();
+
 	sorter();
 	pager();
 	tabsForTable();
-
+	copyToBufer();
 });
 
 $(window).load(function(){
