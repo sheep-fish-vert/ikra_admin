@@ -215,7 +215,39 @@
 
     /* offer-page */
 
+        .offer-page{
+            .mbox{padding-left:0;padding-right:0;
 
+                .offer-page-wrap{display: block;
+                    .left-content, .right-content{width:100%;}
+                }
+
+                .right-content{
+                    .main-content{
+                        .row{
+                            .row-content{padding-bottom: 0;
+                                .item{border-bottom:1px solid #eff2f3;
+                                    &:last-child{border-bottom:none;}
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .left-content{
+                    .heading-part{
+                        .image-wrapper{padding:0;text-align:left;
+                            img{min-height:100px;}
+                        }
+                        .offer-name{text-align:left;}
+                    }
+                }
+
+            }
+
+            .mobile-red-color{color:#ff0000;}
+
+        }
 
     /* /offer-page */
 
