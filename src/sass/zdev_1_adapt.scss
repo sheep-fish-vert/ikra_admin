@@ -51,6 +51,10 @@
 
         .offers-table{
 
+            .mbox{padding-left:0;padding-right:0;}
+
+            .offers-table-left{width:100%;}
+
             .offers-table-top, .offers-table-bottom{flex-wrap:wrap;
                 .offers-table-right{width:100%;}
             }
