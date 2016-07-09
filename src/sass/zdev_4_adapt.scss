@@ -239,6 +239,32 @@
             a,button{width: 50%;}
         }
     }
+
+
+    // tiket-talk
+    .tiket-talk{
+        .title{padding: 0;display: block;
+            h1{margin-bottom: 10px;}
+            .button-orange{max-width:215px;height: 71px;font-size: 24px;}
+        }
+        .tiket-chat{padding-right: 0;padding-top: 25px;}
+        .tiket-chat-row{margin-bottom: 17px;
+            .tiket-chat-text{margin-right: 12px;}
+            .tiket-chat-date{transform: translateY(0);top: 2px;right: 31px;white-space: nowrap;font-size: 14px;font-weight: 500;padding: 0;}
+            &.user{
+                .tiket-chat-text{margin-left: 0;margin-right: 10px;}
+                .tiket-chat-date{right: auto;left: 0;}
+            }
+        }
+        .tiket-chat-form{padding: 0;padding-top: 25px;margin: 0 -10px;
+            .form_row{width: calc(100% - 135px);
+                &.button-submit{width: 135px;margin-top: 0;}
+                textarea{height: 71px;}
+                .button-grey{height: 70px;font-size: 16px;}
+            }
+        }
+
+    }
 }
 @media screen and (max-width: 767px){
 
