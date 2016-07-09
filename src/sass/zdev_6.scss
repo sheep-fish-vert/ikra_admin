@@ -325,20 +325,22 @@
 	.rotator{
 		.mbox{ max-width: 1130px;
 			.form-wrapper{
-				.rotator-form{
+				.rotator-form.common-form{
+					.common-forms-wrap{justify-content: space-between;}
 					.left-side, .right-side{
-						.automatic-insertion{ display: block;
-							input[type="checkbox"]{width: auto; display: inline-block;margin-right: -15px;
-					
+						.title{height:54px;margin-bottom:20px;}
+						.automatic-insertion{ display: block;background-color:#eaeced;border-bottom:1px solid #dde1e3;
+							label{display:inline-block;background-color:transparent;border-bottom:none;
+								input[type="checkbox"]{width: auto; display: inline-block;margin-right: -15px;width:17px;}
+								span{display: inline-block;}
 							}
+							
 						}
 						label{
 							input.error{border: 1px solid red;}
 						}
 					}
-					.right-side{
-						
-					}
+					.left-side{margin-right:0;}
 				}
 			}
 		}
