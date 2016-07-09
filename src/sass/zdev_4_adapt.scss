@@ -263,7 +263,24 @@
                 .button-grey{height: 70px;font-size: 16px;}
             }
         }
+    }
 
+    // my-domens
+    .my-domens{
+        .title{padding-left: 25px;}
+        .my-domens-form {display: flex;flex-direction: column-reverse;
+            &>p{padding-left: 25px;padding-right: 72px;
+                br{display: block;}
+            }
+
+            form{margin-bottom: 0;padding-top: 120px;padding-left: 10px;padding-right: 10px;display: block;}
+            .form_row {
+                input{height: 80px;width: 100%;font-size: 30px;font-weight: 400;}
+            }
+            .my-domens-button{padding-top: 30px;
+                .button-orange{width: 100%;height: 80px;font-size: 30px;font-weight: 400;}
+            }
+        }
     }
 }
 @media screen and (max-width: 767px){
