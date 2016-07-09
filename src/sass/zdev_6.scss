@@ -426,17 +426,18 @@
 	.profile{
 		.mbox{
 			.form-wrapper{
+				.title{margin-bottom:20px;}
 				.profile-form{
 					.left-side, .right-side{
-						label{flex-direction: row; padding-left: 15px; align-items: center;
-							&:nth-of-type(1){margin-bottom: 30px;							
+						label{flex-direction: row; padding: 25px 15px; align-items: center;
+							&:nth-of-type(1){margin-bottom: 30px;}
+							.profile-descript-main{display: flex;justify-content: space-between;align-items: center;width:100%;
+								.profile-descript-wrap{display:flex;justify-content: flex-start;align-items: center;width:;}
 							}
-							.input-wrapper{min-width: 340px; margin: 0 20px 0 auto;}
+							.input-wrapper{min-width: 340px;}
 							input{ 
-								&.error{border: 1px solid red;								
-								}
+								&.error{border: 1px solid red;}
 							}
-							.span-wrapper{}
 							span{ margin: 0px 0px 0px 0px; vertical-align: middle; color: #5b7280;font-size: 18px; vertical-align: middle; 
 								span{color: #b0c1c8; font-size: 12px;}
 							}
@@ -446,7 +447,7 @@
 						}
 					}
 
-					.right-side{padding-top: 80px;
+					.right-side{
 						label{
 							&:nth-of-type(1){ padding: 0;
 								.refwrapper-left, .refwrapper-right{ width: 50%;
