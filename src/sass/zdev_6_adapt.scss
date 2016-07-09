@@ -197,7 +197,27 @@
     /* /my-streams */
 
     /* payments */
-
+    .payments{
+        .mbox{
+            .title{padding-left: 6px;margin-bottom: 25px;}
+            .form-wrapper{margin:0 -10px;
+                form{max-width: 100%;background:transparent;
+                    label{border-bottom: none;align-items: center;
+                        input{width: calc(100% - 71px);height: 72px;font-size: 20px;}
+                        img{max-height: 46px;}
+                        p{padding-left: 70px;padding-top: 5px;font-size: 16px;}
+                        &:nth-child(2){
+                            img{margin-right: 25px;}
+                            p{margin-top: 0;}
+                        }
+                    }
+                }
+                .paiment-table{margin-top: 25px;
+                    tr td{padding: 18px 0px;}
+                }
+            }
+        }
+    }
 
 
     /* /payments */

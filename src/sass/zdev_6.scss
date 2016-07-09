@@ -216,6 +216,7 @@
 
 	.payments{
 		.mbox{
+			.title{margin-bottom: 35px;}
 			.form-wrapper{
 				form{width: 100%; max-width: 515px; background: #eaeced;
 					label{border-bottom: 1px solid #dde1e3; padding: 30px 30px 10px 20px; display: flex;
@@ -252,6 +253,7 @@
 				}
 				tbody{
 					tr{
+						&:nth-child(odd){background-color: #fcfcfc;}
 						td{text-decoration: none; color: #8395a0;
 
 						}
