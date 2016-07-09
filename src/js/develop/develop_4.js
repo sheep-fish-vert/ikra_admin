@@ -48,7 +48,7 @@ function arrowInLeftMenu(){
 
 $(document).ready(function(){
     hideLeftMenu();
-    arrowInLeftMenu();
+    //arrowInLeftMenu();
 });
 
 $(window).load(function(){
