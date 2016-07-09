@@ -12,8 +12,14 @@
     /* profile */
 
         .profile{
-            .common-form{
-                .left-side, .right-side{width:calc(50% - 20px);}
+            .mbox{
+                .form-wrapper{
+                    .profile-form.common-form{
+                        .left-side, .right-side{width:calc(50% - 20px);
+                            
+                        }
+                    }
+                }
             }
         }
 
@@ -71,13 +77,46 @@
     /* profile */
 
         .profile{
-            
-            .common-form{
-                .left-side, .right-side{width:100%;}
-                .left-side, .right-side{
-                    label{
-                        input{border:1px solid #dfe6e8;}
+            .mbox{
+                .form-wrapper{
+                    
+                    .profile-form.common-form{
+                        .left-side, .right-side{width:100%;
+                            label{padding:25px 0;
+                                &:nth-of-type(1), &:nth-of-type(7){margin-bottom: 0;margin-top:0;}
+                                &:nth-of-type(5){
+                                    .profile-descript-wrap{
+                                        .span-wrapper{
+                                            &:last-child{
+                                                span{color:#5b7280;font-size:18px;}
+                                            }
+                                        }
+                                    }
+                                    .profile-descript-main{
+                                        &>.span-wrapper{display:block;width:calc(100% - 150px);}
+                                    }
+                                }
+                                .input-wrapper{width:calc(100% - 150px);}
+                                input{border:1px solid #dfe6e8;margin:0;width:100%;height:60px;line-height: 60px;
+                                    &[disabled]{background-color:#f4f4f4;}
+                                }
+                                .span-email-wrapper{
+                                    span{font-size:12px;margin-left:-120px;}
+                                }
+                                &.profile-pass{margin:0 -10px;padding:25px 10px;background-color:#f7f9f9;}
+                            }
+                            .ref-item{display: flex!important;padding:0 0px 0 0px;justify-content: space-between;
+                                .refwrapper-left{width:135px;padding:30px 0 20px 0px;}
+                                .refwrapper-right{width:calc(100% - 150px);background:transparent;text-align:left;}
+                            }
+                        }
+
+                        .button-wrapper{
+                            .button-orange{max-width: 620px;}
+                        }
+
                     }
+
                 }
             }
 
