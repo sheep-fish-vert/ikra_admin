@@ -1,5 +1,5 @@
 function hideLeftMenu() {
-    $('.left-menu .hide-menu').click(function() {
+    $('.left-menu .hide-menu,.header-items .hide-menu').click(function() {
         if( $(window).width()>992) {
             $('.left-menu').stop().toggleClass('hide');
             $('.global-wrapper .main').stop().toggleClass('hide-menu');
