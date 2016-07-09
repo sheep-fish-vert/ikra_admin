@@ -429,12 +429,14 @@
 			.common-forms-wrap{justify-content: space-between;}
 		}
 
+		.span-email-wrapper{display: block;width: 100%;text-align:center;padding-top:10px;}
+
 		.mbox{
 			.form-wrapper{
 				.title{margin-bottom:20px;}
 				.profile-form{
 					.left-side, .right-side{
-						label{flex-direction: row; padding: 25px 15px; align-items: center;
+						label{flex-direction: row;flex-wrap:wrap; padding: 25px 15px; align-items: center;
 							&:nth-of-type(1){margin-bottom: 30px;}
 							.profile-descript-main{display: flex;justify-content: space-between;align-items: center;width:100%;
 								.profile-descript-wrap{display:flex;justify-content: flex-start;align-items: center;width:135px;}
@@ -450,24 +452,23 @@
 							img{max-height: 30px; margin-right: 5px;}	
 
 						}
-					}
 
-					.left-side{margin-right:0;}
+						.ref-item{ padding: 0;
+							.refwrapper-left, .refwrapper-right{ width: 50%;padding: 25px 0 25px 0px;}		
+
+							.refwrapper-right{background:#d2d9dc; text-align: center;
+								span{line-height:1; font-size: 36px; }
+							}	
+
+							.refwrapper-left{padding: 30px 0 20px 25px; display: flex;
+							}				
+						}
+
+					}
 
 					.right-side{
 						label{
-							&:nth-of-type(1){ padding: 0;
-								.refwrapper-left, .refwrapper-right{ width: 50%;
-									padding: 25px 0 25px 0px;
-								}		
-
-								.refwrapper-right{background:#d2d9dc; text-align: center;
-									span{line-height:1; font-size: 36px; }
-								}	
-
-								.refwrapper-left{padding: 30px 0 20px 25px; display: flex;
-								}				
-							}
+							
 							&:nth-of-type(2),&:nth-of-type(3){
 								span{line-height: 1;}
 							}
@@ -480,17 +481,19 @@
 								
 						}
 					}
-					.left-side{
+					.left-side{margin-right:0;
 						label{
-							&:nth-of-type(7){margin-top: 30px;							
-							}
+							&:nth-of-type(7){margin-top: 30px;}
 							&:nth-of-type(4){ flex-wrap: wrap; padding-bottom: 0;
 								.span-email-wrapper{ text-align: center;width: 100%;padding: 5px 0;
 									span{color: #b0c1c8; font-size: 12px; width: 100%; }
 								}						
 							}
 						}
-					}				
+					}
+
+					
+
 				}
 			}
 		}
