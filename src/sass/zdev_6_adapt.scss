@@ -15,7 +15,9 @@
             .mbox{
                 .form-wrapper{
                     .profile-form.common-form{
+
                         .left-side, .right-side{width:calc(50% - 20px);}
+
                     }
                 }
             }
@@ -91,7 +93,7 @@
         .profile{
             .mbox{
                 .form-wrapper{
-                    
+
                     .profile-form.common-form{
                         .left-side, .right-side{width:100%;
                             label{padding:25px 0;
@@ -126,7 +128,6 @@
                         .button-wrapper{
                             .button-orange{max-width: 620px;}
                         }
-
                     }
 
                 }
@@ -179,13 +180,58 @@
     /* /offer-page */
 
     /* my-streams */
-
+    .my-streams {
+        .mbox{
+            .my-streams-table-wrap{margin:0 -10px;}
+            .title{margin-bottom: 55px;padding-left: 5px;
+                h1 > span span{position: absolute;top: calc(100% + 13px);left: 20px;padding-right: 15px;max-height: 40px;overflow: hidden;}
+            }
+            .my-streams-table {
+                thead{
+                    th{font-size: 16px;color: white;}
+                }
+                tbody{
+                    tr{
+                        td{
+                            .mobile-show{font-size: 16px;color: #5b7381;margin-bottom: 5px;padding-left: 10px;text-align: left;}
+                            &:last-child{padding: 0;width: 12%;vertical-align: top;
+                                a{margin: 0;border:none;height: 68px;display: flex;width: 100%;justify-content: center;align-items: center;color: white;background-color: #5b7381;
+                                    &:first-child{background-color: #dc691d;}
+                                    img{display: none;}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
     /* /my-streams */
 
     /* payments */
-
+    .payments{
+        .mbox{
+            .title{padding-left: 6px;margin-bottom: 25px;}
+            .form-wrapper{margin:0 -10px;
+                form{max-width: 100%;background:transparent;
+                    label{border-bottom: none;align-items: center;
+                        input{width: calc(100% - 71px);height: 72px;font-size: 20px;}
+                        img{max-height: 46px;}
+                        p{padding-left: 70px;padding-top: 5px;font-size: 16px;}
+                        &:nth-child(2){
+                            img{margin-right: 25px;}
+                            p{margin-top: 0;}
+                        }
+                    }
+                }
+                .paiment-table{margin-top: 25px;
+                    tr td{padding: 18px 0px;}
+                }
+            }
+        }
+    }
 
 
     /* /payments */
