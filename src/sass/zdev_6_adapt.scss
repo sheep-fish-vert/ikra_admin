@@ -9,6 +9,16 @@
 }
 @media screen and (max-width: 1280px){
 
+    /* profile */
+
+        .profile{
+            .common-form{
+                .left-side, .right-side{width:calc(50% - 20px);}
+            }
+        }
+
+    /* /profile */
+
 }
 @media screen and (max-width: 1024px){
 
@@ -62,6 +72,8 @@
 
         .profile{
             
+            
+
         }
 
     /* /profile */

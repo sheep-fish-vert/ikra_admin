@@ -424,6 +424,11 @@
 /* profile */
 
 	.profile{
+
+		.common-form{
+			.common-forms-wrap{justify-content: space-between;}
+		}
+
 		.mbox{
 			.form-wrapper{
 				.title{margin-bottom:20px;}
@@ -432,9 +437,9 @@
 						label{flex-direction: row; padding: 25px 15px; align-items: center;
 							&:nth-of-type(1){margin-bottom: 30px;}
 							.profile-descript-main{display: flex;justify-content: space-between;align-items: center;width:100%;
-								.profile-descript-wrap{display:flex;justify-content: flex-start;align-items: center;width:;}
+								.profile-descript-wrap{display:flex;justify-content: flex-start;align-items: center;width:135px;}
 							}
-							.input-wrapper{min-width: 340px;}
+							.input-wrapper{width:calc(100% - 140px);}
 							input{ 
 								&.error{border: 1px solid red;}
 							}
@@ -446,6 +451,8 @@
 
 						}
 					}
+
+					.left-side{margin-right:0;}
 
 					.right-side{
 						label{
@@ -466,7 +473,7 @@
 							}
 							&:nth-of-type(5){
 								.span-wrapper:last-child{
-									span{color: #cf6f55; font-size: 14px; margin-left: 20px; margin-top: 4px;}
+									span{color: #cf6f55; font-size: 14px;  margin-top: 4px;}
 									
 								}
 							} 
