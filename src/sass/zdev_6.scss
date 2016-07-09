@@ -106,11 +106,16 @@
 /* balance */
 
 	.balance{
-		.mbox{display: flex; flex-wrap: wrap; justify-content: flex-end;
-			.search-field{ padding: 15px 10px 0 0;
-			}
+
+		.balance-top{display: flex;justify-content: space-between;align-items:center;margin-bottom: 20px;
+			.balance-right{display: flex;justify-content: flex-end;align-items: center;}
+		}
+
+		.balance-bottom{display: flex;justify-content: space-between;align-items: center;padding-top: 20px;}
+
+		.mbox{
+			
 			.heading{flex: 1; display: flex; padding: 0 0 10px 0;
-				img{}
 				h3{color: #f97c39; font-size: 28px; font-family: 'CoreSans' ; font-weight: 300; margin: 0; vertical-align: middle; line-height: 2; padding: 0 0 0 10px; }
 			}
 			.pagination{ flex: 1; }

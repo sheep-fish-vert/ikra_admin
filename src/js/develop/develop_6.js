@@ -23,8 +23,8 @@ function pager(){
 }
 
 function sorter(){
-	$("#tableToSort")
-		.tablesorter(); 
+	$("#tableToSort").tablesorter();
+
 }
 
 function tabsForTable(){

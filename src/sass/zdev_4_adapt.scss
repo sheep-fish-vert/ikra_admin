@@ -71,7 +71,6 @@
             li{width: 33.33%;display: flex;border-bottom: 1px solid #2c3f4b;border-right: 1px solid #2c3f4b;
                 &:nth-child(3n){border-right: none;}
 
-
                 &:nth-of-type(1){order: 1; -webkit-order: 1;}
                 &:nth-of-type(3){order: 6; -webkit-order: 6;}
                 &:nth-of-type(2){order: 4; -webkit-order: 4;}
@@ -282,6 +281,63 @@
             }
         }
     }
+
+    /* paginator */
+
+        .pagination{
+
+            .pagination-button{width:253px;height:66px;
+                a{width:100%;height:66px;
+                    .pagination-text{display: inline;}
+                    &>span{background-color: #4e7483;}
+                    &:after{display:none;}
+                }
+                &:hover{
+                    span{border-color:transparent;
+                        span{background-color:transparent;color:#fff;}
+                    }
+                }
+                
+                &.prev, &.next{
+                    a{
+                        &>span{
+                            &:before, &:after{content:'';display: inline-block;width:10px;height:10px;border-color:#fff;border-style:solid;transform:rotate(45deg);transform-origin:50% 50%;}
+                        }
+                    }
+                }
+                &.prev{
+                    a{
+                        &>span{
+                            &:before{border-width:0 0 1px 1px;margin-right:15px;}
+                            &:after{display: none;}
+                        }
+                    }
+                }
+                &.next{
+                    a{
+                        &>span{
+                            &:before{display: none;}
+                            &:after{border-width:1px 1px 0 0;margin-left:15px;}
+                        }
+                    }
+                }
+            }
+
+            span:not([class]){width:100%;height:66px;}
+
+            li{margin:0;height:66px;
+              &:not(.pagination-button){width:calc((100% - 506px) / 3);height:66px;font-size:16px;
+                span{background-color:transparent;border:none;}
+              } 
+              &.active{
+                  span{font-size: 31px;color:#4e7483;}
+              } 
+            }
+
+        }
+
+    /* /pagination */
+
 }
 @media screen and (max-width: 767px){
 

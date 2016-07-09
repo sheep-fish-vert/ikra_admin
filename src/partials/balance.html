@@ -1,30 +1,46 @@
 <section class="balance">
 	<div class="mbox">
-		<div class="heading">
-			<img src="images/strongbox.png">
-			<h3>Баланс</h3>
-		</div>
-		<div id="pager" class="pager"> 
-			<div class="text-wrapper">
-				<p>Показать по:</p>
+		<div class="balance-top">
+
+			<div class="title">
+				<h1>
+					<img src="images/strongbox.png">
+					<span>
+						<b>Баланс</b>
+					</span>
+				</h1>
+				<span class="button-menu"></span>
 			</div>
-			<form>
-					<label style="background: transparent;" data-num="10">10</label>
-					<label data-num="20">20</label>
-					<label data-num="30">30</label>
-					<label data-num="40">40</label>				
-			</form> 
-		</div>
-		
-		<div class="search-field">
-		    <form action="" name="search-field">
-		        <div class="form_row">
-		            <input type="text" name="search-field-input" placeholder="Поиск" required="required">
-		        </div>
-		        <div class="search-field-button">
-		            <button type="submit"></button>
-		        </div>
-		    </form>
+
+			<div class="balance-right">
+
+				<div id="pager" class="pager"> 
+
+					<div class="text-wrapper">
+						<p>Показать по:</p>
+					</div>
+					<form>
+						<label style="background: transparent;" data-num="10">10</label>
+						<label data-num="20">20</label>
+						<label data-num="30">30</label>
+						<label data-num="40">40</label>				
+					</form> 
+
+				</div>
+				
+				<div class="search-field">
+					<form action="" name="search-field">
+						<div class="form_row">
+							<input type="text" name="search-field-input" placeholder="Поиск" required="required">
+						</div>
+						<div class="search-field-button">
+							<button type="submit"></button>
+						</div>
+					</form>
+				</div>
+
+			</div>
+
 		</div>
 
 		<table id="tableToSort" cellspacing="1">
@@ -76,29 +92,53 @@
 			</tbody>			
 		</table>
 
-		<div class="pagination">
-            <ul>
-                <li><a href="#"><span class="pagination-button prev"></span></a></li>
-                <li><a href="#"><span>1</span></a></li>
-                <li class="active"><span>2</span></li>
-                <li><a href="#"><span>3</span></a></li>
-                <li><a href="#"><span class="pagination-button next"></span></a></li>
-            </ul>
-        </div>
+		<div class="balance-bottom">
 
-		<div id="pager" class="pager"> 
-			<div class="text-wrapper">
-				<p>Показать по:</p>
+			<div class="pagination">
+				<ul>
+					<li class="pagination-button prev">
+						<a href="#">
+							<span>
+								<span class="pagination-text">Предыдущая</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>1</span>
+						</a>
+					</li>
+					<li class="active">
+						<span>2</span>
+					</li>
+					<li>
+						<a href="#">
+							<span>3</span>
+						</a>
+					</li>
+					<li class="pagination-button next">
+						<a href="#">
+							<span>
+								<span class="pagination-text">Следующая</span>
+							</span>
+						</a>
+					</li>
+				</ul>
 			</div>
-			<form>
-					<label style="background: transparent;" data-num="10">10</label>
-					<label data-num="20">20</label>
-					<label data-num="30">30</label>
-					<label data-num="40">40</label>				
-			</form> 
+
+			<div id="pager" class="pager"> 
+				<div class="text-wrapper">
+					<p>Показать по:</p>
+				</div>
+				<form>
+						<label style="background: transparent;" data-num="10">10</label>
+						<label data-num="20">20</label>
+						<label data-num="30">30</label>
+						<label data-num="40">40</label>				
+				</form> 
+			</div>
+
 		</div>
-		
-		
 
 	</div>
 </section>
