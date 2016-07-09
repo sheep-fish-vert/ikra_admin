@@ -87,6 +87,9 @@
                 &:nth-of-type(10){order: 13; -webkit-order:13;}
                 &:nth-of-type(12){order: 14; -webkit-order:14;}
                 &:nth-of-type(14){order: 15; -webkit-order:15;}
+                &:nth-of-type(15){order: 16; -webkit-order:16;}
+
+                &.hide-menu{order: 3; -webkit-order:3;}
 
                 &:hover,&.active{
                     .item-icon{
@@ -105,6 +108,7 @@
                             &.icon-11{background-image: url(../images/left-menu-img-11-active-m.png);}
                             &.icon-12{background-image: url(../images/left-menu-img-12-active-m.png);}
                             &.icon-13{background-image: url(../images/left-menu-img-13-active-m.png);}
+                            &.icon-15{background-image: url(../images/left-menu-img-15-active-m.png);}
                         }
                     }
                     .item-text{text-shadow: 0px 0px 1px #314653;}
@@ -123,7 +127,7 @@
                 }
                 a{display: flex;flex-direction: column;height: auto;width: 100%;justify-content: center;}
 
-                .item-icon{width: 100%;background-color: transparent;height: 70px;border-bottom: none;margin-bottom: 18px;
+                .item-icon{width: 100%;background-color: transparent;height: 50px;border-bottom: none;margin-bottom: 18px;
                     &:after{display: none;}
                     .icon-img{background-size: contain;
                         &.icon-1{background-image: url(../images/left-menu-img-1-active-mobile.png);}
@@ -139,6 +143,7 @@
                         &.icon-11{background-image: url(../images/left-menu-img-11-active-m.png);}
                         &.icon-12{background-image: url(../images/left-menu-img-12-active-m.png);}
                         &.icon-13{background-image: url(../images/left-menu-img-13-active-m.png);}
+                        &.icon-15{background-image: url(../images/left-menu-img-15-active-m.png);}
                     }
                 }
                 .item-text{border-bottom: none;width: 100%;height: auto;color: #98a2a9;font-size: 18px;justify-content: center;
@@ -156,6 +161,7 @@
             }
         }
     }
+    .left-menu-mini-arrow{display: none;}
 
     // panel
     .panel-top {
@@ -226,6 +232,7 @@
                 .ticket-create-text{width: 114px;
                     span{margin-right: 15px;}
                 }
+                .ticket-create-input input{height: 60px;font-size: 18px;}
             }
         }
         .ticket_submit{margin:0 -10px;padding-top: 77px;
