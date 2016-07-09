@@ -74,6 +74,11 @@
             
             .common-form{
                 .left-side, .right-side{width:100%;}
+                .left-side, .right-side{
+                    label{
+                        input{border:1px solid #dfe6e8;}
+                    }
+                }
             }
 
         }
