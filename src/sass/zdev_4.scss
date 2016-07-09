@@ -136,7 +136,7 @@
     &>span.button-menu{display: none;}
     h1,h2,h3{display: flex;align-items: center;margin:0;
         img{margin-right: 17px;}
-        &>span{
+        &>span{display: flex;flex-direction: column;justify-content: flex-start;
             b{color: #f8681b;font-size: 28px;font-weight: 300;display: block;}
             span{font-size: 16px;color: #d2d9dc;font-weight: 400;}
         }
