@@ -89,6 +89,7 @@
                         .offers-buttons-wrap{display: flex;justify-content: flex-end;margin-bottom:0;}
                         .button-offers-plus, .button-offers-minus{width:75px;height:83px;}
                         .button-transparent{width: 75px;height:83px;margin:0;
+                            &:last-child{border-width:1px 1px 0 1px;}
                             .icon-wrap{display: none;}
                             span{margin-left:0;font-size:16px;}
                         }
