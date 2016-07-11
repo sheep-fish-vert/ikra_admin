@@ -4,8 +4,15 @@
 
         .offers-table-top, .offers-table-bottom{display: flex;justify-content: space-between;align-items: center;
 
-            .offers-table-right{width: calc(100% - 250px);display: flex;justify-content: flex-end;align-items: center;}
+            .offers-table-right{width: calc(100% - 250px);display: flex;justify-content: flex-end;align-items: center;
 
+            }
+
+        }
+        .offers-table-bottom{
+            .offers-table-right{
+                .jq-selectbox__dropdown{top: auto !important;bottom: 32px !important;}
+            }
         }
 
         .offers-table-top{margin-bottom: 30px;}
@@ -185,7 +192,7 @@
         /* statistic-nav */
 
             .statistic-tab-nav{margin:0 0 20px 0;display:flex;justify-content: space-between;align-items: center;
-                
+
                     label{display: flex;justify-content: center;align-items: center;padding:0 5px;height: 50px;border-right: 1px solid #516775;font-size: 14px;text-align: center;background-color: #5b7381;color:#fff;cursor:pointer;position: relative;z-index:0;width:calc(100% / 13);transition:color 300ms ease;
                         &:before{content:'';pointer-events:none;position: absolute;top:0;left:0;bottom:0;right:-1px;z-index: 0;background-color: transparent;transition:all 300ms ease;}
                         &:last-child{border-right:none;}
@@ -195,7 +202,7 @@
                         }
                         input{position:absolute;width:0;height:0;font-size: 0;line-height: 0;color:transparent;opacity:0;top:0;left:0;padding:0;margin:0;}
                     }
-                
+
             }
 
         /* /statistic-nav */
@@ -286,7 +293,7 @@
         /* /statistic-filter */
 
         /* statistic-table */
-            
+
             .statistic-table-main{margin-bottom: 30px;}
             .statistic-table{min-width: 1100px;display: flex;justify-content: center;align-items: flex-start;
 
