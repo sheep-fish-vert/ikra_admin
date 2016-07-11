@@ -288,8 +288,10 @@
 .button-orange{font-weight: 500;color: white;font-size: 18px;color: white;text-decoration: none;background-color: #ef7e2b;display: flex;justify-content: center;align-items: center;height: 49px;transition:all ease-out .1s;cursor: pointer;padding: 0 25px;
     &:hover{background-color: #ff8c37;}
     &:active{background-color: #d6762f;}
+    span{width: 100%;text-align: center;}
 }
 .button-grey{font-weight: 500;color: #5b7381;font-size: 16px;text-decoration: none;background-color: #d2d9dc;display: flex;justify-content: center;align-items: center;height: 53px;transition:all ease-out .1s;cursor: pointer;padding: 0 25px;max-width: 175px;width: 100%;border:none;
+    span{width: 100%;text-align: center;}
     &:hover{background-color: #e0e7ea;}
     &:active{background-color: #bac2c5;}
 }
