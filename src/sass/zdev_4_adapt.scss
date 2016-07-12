@@ -1,7 +1,7 @@
 @media screen and (max-width: 1920px){
 
 }
-@media screen and (max-width: 1800px){
+@media screen and (max-width: 1895px){
     .panel-top{
         .panel-top-img{max-width: 150px;top: 100px;
             .panel-top-img-person-comment{max-width: 134px;left: -66px;
@@ -10,8 +10,10 @@
         }
     }
 }
-@media screen and (max-width: 1600px){
-
+@media screen and (max-width: 1573px){
+    .panel-top{
+        .panel-top-img{opacity: 0;visibility: hidden;}
+    }
 }
 @media screen and (max-width: 1366px){
     // left-menu
@@ -31,9 +33,7 @@
     }
 }
 @media screen and (max-width: 1280px){
-    .panel-top{
-        .panel-top-img{opacity: 0;visibility: hidden;}
-    }
+
     // header
     .header .header-items{width: calc(100% - 115px);}
     .header .header-logout{width: 115px;}
