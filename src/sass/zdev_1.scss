@@ -193,7 +193,7 @@
 
             .statistic-tab-nav{margin:0 0 20px 0;display:flex;justify-content: space-between;align-items: center;
 
-                    label{display: flex;justify-content: center;align-items: center;padding:0 5px;height: 50px;border-right: 1px solid #516775;font-size: 14px;text-align: center;background-color: #5b7381;color:#fff;cursor:pointer;position: relative;z-index:0;width:calc(100% / 13);transition:color 300ms ease;
+                    label,a{display: flex;justify-content: center;align-items: center;padding:0 5px;height: 50px;border-right: 1px solid #516775;font-size: 14px;text-align: center;background-color: #5b7381;color:#fff;cursor:pointer;position: relative;z-index:0;width:calc(100% / 13);transition:color 300ms ease;text-decoration: none;
                         &:before{content:'';pointer-events:none;position: absolute;top:0;left:0;bottom:0;right:-1px;z-index: 0;background-color: transparent;transition:all 300ms ease;}
                         &:last-child{border-right:none;}
                         span{position: relative;z-index: 1;}

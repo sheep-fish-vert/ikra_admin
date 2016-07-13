@@ -69,8 +69,8 @@
                 }
             }
             .item-text{border-bottom: 1px solid #e0e4e6;width: calc(100% - 56px);height: 100%;display: flex;align-items: center;position: relative;transition:width ease-out .4s;z-index: 2;
-                span{white-space: nowrap;padding-left: 17px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;position: relative;z-index: 3;transition:all ease-out .1s;left: 0;
-                    i{position: absolute;font-size: 11px;color: #d2d9dc;background-color: #304552;width: 20px;height: 20px;border-radius: 50%;overflow: hidden;display: flex;align-items: center;justify-content: center;top: -1px;right: -23px;font-style: normal;}
+                span{white-space: nowrap;padding-left: 17px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;z-index: 3;transition:all ease-out .1s;left: 0;
+                    i{position: absolute;font-size: 11px;color: #d2d9dc;background-color: #304552;width: 20px;height: 20px;border-radius: 50%;overflow: hidden;display: flex;align-items: center;justify-content: center;top: 13px;right: 13px;font-style: normal;}
                 }
             }
             .item-icon-arrow{width: 56px;height: 100%;position: relative;
@@ -151,6 +151,7 @@
         .panel-top-stat{min-height: 285px;display: flex;flex-direction: column;justify-content: space-between;position: relative;z-index: 3;max-width: 510px;
             &:after{position: absolute;height: 100%;width: 100%;content: '';background-color: #fcfcfc;z-index: 2;top: 8px;right: -8px;}
             .row{display: flex;padding: 7px 0px;align-items: center;background-color: #eaeced;border-bottom: 1px solid #dde1e3;flex:1;position: relative;z-index: 3;
+                a{text-decoration: none;}
                 &:last-child{border-bottom: none;}
                 &.big{background-color: #d2d9dc;font-size: 20px;}
                 b{font-size: 24px;color: #5b7381;font-weight: 500;}

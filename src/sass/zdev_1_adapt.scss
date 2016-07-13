@@ -25,7 +25,7 @@
         .statistic{
 
             .statistic-tab-nav{flex-wrap:wrap;justify-content: space-around;
-                label{width:calc(100% / 6);}
+                label,a{width:calc(100% / 6);}
             }
 
             .statistic-filter{

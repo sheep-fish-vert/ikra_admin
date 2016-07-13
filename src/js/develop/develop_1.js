@@ -17,19 +17,18 @@
 
     function statisticTopRadioChange(){
 
-        $(document).on('click', '.statistic-tab-nav label', function(){
-            $('.statistic-tab-nav label').removeClass('active');
+        $(document).on('click', '.statistic-tab-nav a', function(){
+            $('.statistic-tab-nav a').removeClass('active');
             $(this).addClass('active');
         });
 
-        $('.statistic-tab-nav label').eq(0).click();
+        //$('.statistic-tab-nav a').eq(0).click();
 
     }
 
     function statisticMoreSearch(){
 
         $(document).on('click', '.mobile-statistic-more-search button', function(){
-            console.log('s');
             $(".statistic-big-search").slideToggle(300);
         });
 

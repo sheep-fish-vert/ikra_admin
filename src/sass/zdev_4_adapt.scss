@@ -147,7 +147,9 @@
                     }
                 }
                 .item-text{border-bottom: none;width: 100%;height: auto;color: #98a2a9;font-size: 18px;justify-content: center;
-                    span{padding: 0;left: auto;}
+                    span{padding: 0;left: auto;
+                        i{display: none;}
+                    }
                 }
                 .item-icon-arrow{width: 100px;height: 70px;position: relative;margin-bottom: 20px;
                     span{width: 35px;height: 35px;border-right: 2px solid #8f9aa1;border-bottom: 2px solid #8f9aa1;position: absolute;top: 50%;transform: translateY(-81%) scaleX(.7) rotate(-45deg);left: 16px;transform-origin: 100% 50%;background-color: transparent;transition:all ease .2s;border-left: none;border-top: none;}
